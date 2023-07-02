@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    text-transform: uppercase;
+}
+button:hover {
+    cursor: pointer;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.buttom-nav,
+.top-nav {
+    padding: 15px 80px;
+}
+
+.top-nav {
+    background-color: #292c2e;
+    height: 70px;
+    overflow: auto;
+}
+
+.buttom-nav {
+    background-color: black;
+    height: 84px;
+    overflow: auto;
+}
+
+.top-nav .buttons button {
+    padding: 8px 20px;
+    border: 2px solid #ccc;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+.float {
+    float: left;
+}
+
+.buttons {
+    text-align: right;
+}
+
+.icon {
+    margin-right: 20px;
+    color: white;
+}
+
+.logo {
+    color: white;
+}
+
+.top-nav .left .icon {
+    margin-top: 7px;
+}
+
+.top-nav .left .logo {
+    display: none;
+}
+
+.location {
+    font-size: 22px;
+    color: white;
+}
+
+.buttom-nav .buttons {
+    float: right;
+    text-align: center;
+    height: 100%;
+}
+
+.buttom-nav button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #881f26;
+    outline: none;
+    border: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.buttons button,
+.buttons p.exp {
+    display: inline-block;
+}
+
+.exp {
+    margin-left: auto;
+    color: white;
+    margin: auto;
+    height: 100%;
+    font-size: 18px;
+}
+
+.top-nav .buttons .bars {
+    border: none;
+}
+
+.buttom-nav .logo {
+    font-size: 40px;
+}
+
+.buttons-sm-md-screens {
+    display: none;
+}
+
+.fixed {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .buttom-nav,
+    .top-nav {
+        padding: 15px 20px;
+    }
+
+    .top-nav .buttons button {
+        margin-left: 10px;
+    }
+
+    .buttom-nav .logo {
+        font-size: 30px;
+    }
+
+    .buttom-nav button {
+        padding: 8px 10px;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .exp {
+        font-size: 14px;
+    }
+
+    .top-nav .buttons button {
+        padding: 8px 10px;
+    }
+
+    .buttons-lg-screens {
+        display: none;
+    }
+
+    .buttons-sm-md-screens {
+        display: block;
+    }
+
+    .buttom-nav {
+        display: none;
+    }
+
+    .icon,
+    .location,
+    .top-nav .buttons .sign-in {
+        display: none;
+    }
+
+    .top-nav .left .logo {
+        display: block;
+        font-size: 22px;
+    }
+
+    .fixed {
+        display: block;
+        padding: 15px;
+        background-color: black;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 999;
+    }
+    .fixed div:first-child {
+        text-align: center;
+        color: white;
+        margin: 0 10px;
+        position: relative;
+    }
+
+    .fixed .buttons {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .fixed .buttons button {
+        width: 46%;
+        padding: 15px 20px;
+        font-size: 15px;
+        background-color: #881f26;
+        outline: none;
+        border: none;
+        color: white;
+    }
+    .fixed .buttons button:first-child {
+        margin-right: 20px;
+    }
+}
+@media (max-width: 768px) {
+
+    .top-nav .buttons {
+        text-align: right;
+    }
+
+    .top-nav .buttons .sign-in-rewards {
+        display: none;
+    }
+
+    .top-nav .buttons .sign-in {
+        display: inline;
+    }
+}
+
+.hero {
+    margin-top: 135px;
+    position: relative;
+    height: 600px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .absolute {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    color: white;
+    text-align: center;
+    z-index: 100;
+}
+
+.hero .absolute h1 {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: serif;
+}
+
+.hero .absolute p {
+    margin-top: 10px;
+    max-width: 350px;
+    line-height: 35px;
+    font-size: 23px;
+}
+
+.categories {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #881f26;
+    overflow: auto;
+}
+
+.categories a {
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.category {
+    height: 300px;
+    position: relative;
+}
+
+.category img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.category::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.category .absolute {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    z-index: 99;
+    font-size: 24px;
+    letter-spacing: 8px;
+    width: 100%;
+    text-align: center;
+}
+.category .absolute:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.category-items {
+    padding: 50px 100px;
+    background-color: black;
+}
+
+.items {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.left-items,
+.right-items {
+    width: 45%;
+}
+
+.left-items {
+    float: left;
+    margin-right: 40px;
+}
+
+.right-items {
+    float: right;
+}
+
+.item {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.item a {
+    text-decoration: underline;
+}
+
+.item p {
+    margin-top: 10px;
+    line-height: 25px;
+    /* max-width: 400px; */
+}
+
+.order {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.order button {
+    padding: 15px 150px;
+    color: white;
+    background-color: #881f26;
+    outline: none;
+    border: none;
+    font-size: 19px;
+    font-weight: 400;
+}
+@media (max-width: 1024px) {
+
+    .buttom-nav {
+        height: 65px;
+    }
+
+    .order button {
+        padding: 15px 100px;
+    }
+
+    .category .absolute {
+        font-size: 20px;
+    }
+
+    .hero {
+        margin-top: 0;
+    }
+
+    .top-nav {
+        background-color: black;
+    }
+}
+@media (max-width: 700px) {
+    .left-items,
+    .right-items {
+        width: 100%;
+    }
+}
+@media (max-width: 426px) {
+
+    .order {
+        margin: 0;
+    }
+
+    .order button {
+        padding: 12px 35px;
+        font-size: 15px;
+    }
+
+    .category-items {
+        padding: 30px;
+    }
+
+    .fixed .buttons button {
+        padding: 12px 30px;
+    }
+}
+@media (max-width: 400px) {
+
+    .order {
+        margin-top: 0;
+    }
+
+    .order button {
+        padding: 10px 20px;
+    }
+
+    .fixed .buttons button {
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .fixed .buttons button:first-of-type {
+        margin: 10px 0 15px;
+    }
+
+    .top-nav .buttons .sign-in, .top-nav .buttons .bars {
+        padding: 5px;
+        margin-left: 8px;
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    
+    .top-nav .buttons .sign-in, .top-nav .buttons .bars {
+        padding: 5px;
+        margin-left: 5px;
+        font-size: 15px;
+    }
+}
