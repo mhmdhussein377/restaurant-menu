@@ -128,7 +128,6 @@ nav {
 .fixed {
     display: none;
 }
-
 @media (max-width: 1024px) {
     .buttom-nav,
     .top-nav {
@@ -413,30 +412,15 @@ nav {
     .top-nav {
         background-color: black;
     }
-}
-@media (max-width: 700px) {
-    .left-items,
-    .right-items {
-        width: 100%;
-    }
-}
-@media (max-width: 426px) {
 
-    .order {
-        margin: 0;
-    }
+}
+@media (max-width: 320px) {
 
-    .order button {
-        padding: 12px 35px;
+    .top-nav .buttons .bars,
+    .top-nav .buttons .sign-in {
+        padding: 5px;
+        margin-left: 5px;
         font-size: 15px;
-    }
-
-    .category-items {
-        padding: 30px;
-    }
-
-    .fixed .buttons button {
-        padding: 12px 30px;
     }
 }
 @media (max-width: 400px) {
@@ -453,24 +437,47 @@ nav {
         padding: 10px 20px;
         width: 100%;
     }
-
     .fixed .buttons button:first-of-type {
         margin: 10px 0 15px;
     }
 
-    .top-nav .buttons .sign-in, .top-nav .buttons .bars {
+    .top-nav .buttons .bars,
+    .top-nav .buttons .sign-in {
         padding: 5px;
         margin-left: 8px;
         font-size: 15px;
     }
 
 }
+@media (max-width: 426px) {
 
-@media (max-width: 320px) {
-    
-    .top-nav .buttons .sign-in, .top-nav .buttons .bars {
-        padding: 5px;
-        margin-left: 5px;
+    .order {
+        margin: 0;
+    }
+
+    .order button {
+        padding: 12px 35px;
         font-size: 15px;
+    }
+
+    
+
+    .fixed .buttons button {
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .left-items,
+    .right-items {
+        width: 100%;
+    }
+
+    .order button {
+        padding: 10px 20px;
+    }
+
+    .category-items {
+        padding: 30px;
     }
 }
